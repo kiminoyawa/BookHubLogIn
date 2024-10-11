@@ -1,8 +1,8 @@
 /* Colors:
 #a52a2a - Background
-#ffffff - Secondary
+#ffffff - Secondary Background
 #333333 - Text
-#
+#F5DEB3 -Secondary Text
 */
 
 * {
@@ -24,26 +24,26 @@ body {
 
 }
 
-.system-logo {
+.system {
   background: #a52a2a;
   border-radius: 50px;
   border-bottom-left-radius: 0px;
   border-top-right-radius: 0px;
 }
 
-.system-logo img {
-  width: 30%;
-}
-
-.system-logo p {
+.system p {
   color: #F5DEB3;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .panel-title {
   color: #333333;
   font-weight: 600;
   font-size: 1.75rem;
+}
+
+.reg-form {
+  border-top: 1px solid #a52a2a;
 }
 
 .input-group-text {
@@ -84,11 +84,11 @@ body {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn:hover {
+.btn.btn-primary:hover  {
   background-color: #ccc;
-  border: 1px solid #a52a2a;
   color: #a52a2a;
   transform: translateY(-2px);
+  border: 1px solid #a52a2a;
 }
 
 a {
@@ -107,15 +107,11 @@ a:hover {
       background: white;
   }
 
-  .system-logo {
+  .system {
     background: none;
   }
 
-  .system-logo img {
-    width: 50%;
-  }
-
-  .system-logo p {
+  .system p {
     color: #a52a2a;
   }
 
@@ -130,12 +126,51 @@ a:hover {
 }
 
 /* removed selectors
-panel-heading1
-btn, btnSignup
-btn, btnSignup:hover
-btn-primary1
-btn-primary1:hover
-btn-default1
-btn-default1:hover
+  .panel-heading1 {
+    border-color: #811222;
+    background: #811222;
+    border-color: #811222;
+  }
+
+ .btn.btnSignUp:hover {
+    background-color: #800000;
+    color: white;
+    border-color: #800000;
+  }
+
+  .btn.btn-primary1 {
+    font-size: 10.5pt;
+    color: #ffffff;
+    background-color: #811222;
+    font-family: lucida sans;
+    border-color: #811222;
+  }
+
+    .btn.btn-default1 {
+    font-size: 10.5pt;
+    color: #ffffff;
+    background-color: #811222;
+    font-family: lucida sans;
+    border-color: #811222;
+  }
+ 
+  .btn.btn-primary1:hover {
+    font-size: 10pt;
+    color: #811222;
+    background-color: #ffffff;
+    font-family: lucida sans;
+    border-color: #811222;
+    font-weight: bold;
+  }
+
+  .btn.btn-default1:hover {
+    font-size: 10pt;
+    color: #811222;
+    background-color: #ffffff;
+    font-family: lucida sans;
+    border-color: #811222;
+    font-weight: bold;
+  }
+
 @meadia
 */
